@@ -1,0 +1,26 @@
+{
+  "name": "api-ecommerce.14",
+  "module": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "bun server.js --watch",
+    "start": "node server.js",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:migrate:prod": "prisma migrate deploy"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prisma": "^5.20.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
